@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightBlue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp"
+        android:text="登录"/>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@color/lightGray" />
+    <ImageView
+        android:layout_width="209dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/byr"/>
+    <Button
+        android:id="@+id/obtain_token_via_signature"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        style="@style/login_Btn_style"
+        android:text="@string/bbsSDK_obtain_token_via_web" />
+
+ <!--   <TextView
+        android:id="@+id/SwitchAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="切换账号"/>-->
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/bbsSDK_token_info"
+        android:textSize="16sp"
+        android:textStyle="bold" />-->
+<!--
+    <TextView
+        android:id="@+id/token_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp" />-->
+
+   <!-- <Button
+        android:id="@+id/mainBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center_vertical"
+        android:text="@string/gotohome" />-->
+
+</LinearLayout>

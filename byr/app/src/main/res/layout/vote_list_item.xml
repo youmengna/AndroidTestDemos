@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/voteImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:id="@+id/voteCount"
+            android:layout_marginTop="2dp"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/lightBlue"
+            android:textColor="@color/colorWhite"
+            android:text="1111" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/voteTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:text="爱阿斯顿订单ccccccccccccccccccccccccccccccccccccfffffffffffffffffffffffff多对多发的" />
+
+        <TextView
+            android:id="@+id/voteName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/voteTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/voteTitle"
+            android:text="youmengn"
+            android:textColor="@color/lightBlue"/>
+
+        <TextView
+            android:id="@+id/voteState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/voteTitle"
+            android:text="很久后截止" />
+    </RelativeLayout>
+
+</LinearLayout>

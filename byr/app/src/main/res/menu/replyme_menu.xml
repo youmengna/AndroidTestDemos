@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/replyMeRefresh"
+        android:icon="@drawable/refresh"
+        android:showAsAction="always"
+        android:title="刷新"/>
+    <item
+        android:id="@+id/SetRead"
+        android:icon="@drawable/ic_all_read"
+        android:showAsAction="always"
+        android:title="回复我的文章" />
+</menu>

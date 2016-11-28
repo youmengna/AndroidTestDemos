@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ReplyMail"
+        android:icon="@drawable/ic_ok"
+        android:showAsAction="always"
+        android:title="回复邮件" />
+</menu>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.youmengna.byr.ReplyMeDetailAty">
+
+    <LinearLayout
+        android:id="@+id/ReplyMeDetailAbove"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/ReplyMeDetailImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/aa" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ReplyMeDetailImg">
+
+            <RelativeLayout
+                android:id="@+id/ReplyMeDetailRela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ReplyMeDetailName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pager777" />
+
+                <TextView
+                    android:id="@+id/ReplyMeDetailDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1992-03-21 10:23:11" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ReplyMeDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ReplyMeDetailRela"
+                android:layout_below="@+id/ReplyMeDetailRela"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Re：你好呀。。。。。" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ReplyMeDetailContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ReplyMeDetailAbove"
+        android:layout_marginTop="10dp"
+        android:text="1" />
+
+    <LinearLayout
+        android:id="@+id/ReplyMeDetailForwardLineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGray"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ReplyMeDetailForward"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_forward" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="转寄" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ReplyMeDetailReply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_reply" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="回复" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ReplyMeDetailTraceability"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_traceback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="溯源" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ReplyMeDetailForwarLL2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:background="@color/ghostWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="转寄给:" />
+
+        <EditText
+            android:id="@+id/ReplyMeDetailForwardEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edittext"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/ReplyMeDetailForwardSend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:text="发送" />
+    </LinearLayout>
+</RelativeLayout>

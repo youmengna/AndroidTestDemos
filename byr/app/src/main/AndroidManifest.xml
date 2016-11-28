@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.byr.bbs.sdkdemo">
+
+    <!-- permissions -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.youmengna.byr.ByrApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.youmengna.byr.MainActivity" >
+        </activity>
+        <activity android:name="com.youmengna.byr.AuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.youmengna.byr.BaseActivity" />
+        <activity
+            android:name="com.youmengna.byr.InboxActivity"
+            android:label="收件箱"
+            android:logo="@drawable/ic_launcher"
+            android:parentActivityName="com.youmengna.byr.MainActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity android:name="com.youmengna.byr.UserInfoActivity" />
+        <activity android:name="com.youmengna.byr.SetupActivity" />
+        <activity
+            android:name="com.youmengna.byr.MailDetailActivity"
+            android:label="查看邮件"
+            android:logo="@drawable/ic_launcher"
+            android:parentActivityName="com.youmengna.byr.InboxActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.youmengna.byr.SendMailActivity"
+            android:label="新邮件"
+            android:logo="@drawable/ic_launcher"
+            android:parentActivityName="com.youmengna.byr.InboxActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.youmengna.byr.ReplyMailActivity"
+            android:label="回复邮件"
+            android:logo="@drawable/ic_launcher"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.youmengna.byr.VoteActivity"
+            android:label="投票"
+            android:logo="@drawable/ic_launcher"
+            android:parentActivityName="com.youmengna.byr.MainActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity android:name="com.youmengna.byr.VoteOptionActivity"
+            android:label="byr"
+            android:logo="@drawable/ic_launcher"
+            android:theme="@style/CustomActionBarTheme"
+            android:parentActivityName="com.youmengna.byr.VoteActivity"/>
+        <activity
+            android:name="com.youmengna.byr.TopTenDetail"
+            android:label="阅读文章"
+            android:logo="@drawable/ic_launcher"
+            android:parentActivityName="com.youmengna.byr.MainActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.youmengna.byr.ReplyArticle"
+            android:label="回复文章"
+            android:logo="@drawable/ic_launcher"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity android:name="com.youmengna.byr.AtMeActivity" />
+        <activity
+            android:name="com.youmengna.byr.ReplyMeActivity"
+            android:label="回复我的文章"
+            android:logo="@drawable/ic_launcher"
+            android:parentActivityName="com.youmengna.byr.MainActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.youmengna.byr.InboxMailActivity"
+            android:label=""
+            android:logo="@drawable/ic_launcher"
+            android:parentActivityName="com.youmengna.byr.MainActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.youmengna.byr.ReplyMeDetailAty"
+            android:label="回复我的文章"
+            android:logo="@drawable/ic_launcher"
+            android:parentActivityName="com.youmengna.byr.ReplyMeActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity android:name="com.youmengna.byr.BoardDetailActivity"
+            android:logo="@drawable/ic_launcher"
+            android:theme="@style/CustomActionBarTheme">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/boardDetailRefresh"
+        android:icon="@drawable/refresh"
+        android:showAsAction="ifRoom"
+        android:title="刷新"/>
+    <item
+        android:id="@+id/boardDetailSendMail"
+        android:icon="@drawable/ic_write"
+        android:showAsAction="ifRoom"
+        android:title="" />
+    <item
+        android:id="@+id/boardDetailFind"
+        android:icon="@drawable/ic_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/action_search" />
+</menu>

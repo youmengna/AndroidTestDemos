@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">byr</string>
+    <string name="mail">我的信箱</string>
+    <string name="at">我的</string>
+    <string name="replay">回复我的</string>
+    <string name="bbsSDK_token_empty">access token is empty</string>
+    <string name="bbsSDK_token_info">TOKEN information</string>
+    <string name="bbsSDK_obtain_token_via_web">登录</string>
+    <string name="gotohome">登录</string>
+
+    <string name="recipientID">收信人ID</string>
+    <string name="mailtheme">主题</string>
+    <string name="mailcontent">文章内容</string>
+
+
+    <!--  oauth result string -->
+    <string name="bbsDemo_oauth_success">Oauth success</string>
+    <string name="bbsDemo_oauth_failed">Oauth failed</string>
+    <string name="bbsDemo_oauth_canceled">Oauth canceled</string>
+    <string name="bbsDemo_token_to_string_format">Token：%1$s \nexpires_in：%2$s</string>
+    <string name="bbsDemo_token_to_string_format_1">Token：%1$s \nexpires_in：%2$s \nrefresh_token: %3$s</string>
+    <string name="bbsDemo_token_has_existed">Token has existed, do not need to log in again</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="vote_action_list">
+        <item>最新投票</item>
+        <item>最热投票</item>
+        <item>全部投票</item>
+        <item>我的投票</item>
+        <item>参与投票</item>
+    </string-array>
+    <string-array name="inbox_action_list">
+        <item>收件箱</item>
+        <item>发件箱</item>
+        <item>垃圾箱</item>
+    </string-array>
+
+    <string name="hint">Type emoji here</string>
+    <string name="action_search">搜索</string>
+</resources>

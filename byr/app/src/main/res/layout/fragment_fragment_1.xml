@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.youmengna.byr.fragment.Fragment_1">
+
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;
+    <ListView
+        android:id="@+id/sectionList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>-->
+    <ExpandableListView
+        android:id="@+id/section_expand_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ExpandableListView>
+</FrameLayout>

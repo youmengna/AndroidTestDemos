@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.youmengna.byr.VoteOptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vote_option_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="投票标题"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/vote_option_endtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="截止时间" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/voteoptionlist"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"></ListView>
+
+    <Button
+        android:id="@+id/VoteSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/background_vote_btn"
+        android:text="提交投票" />
+</LinearLayout>
